@@ -1,0 +1,64 @@
+/* styles.css */
+body {
+    background-color: #f8f9fa;
+}
+.container {
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.nome{
+    z-index: 5;
+}
+
+.header {
+    position: relative;
+    color: white;
+    padding: 28px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    background-image: url(img/trans.webp);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(145, 75, 198, 0.8); /* Cor com transparência */
+    border-radius: 5px 5px 0 0;
+    z-index: 1;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+    background-color: #6a0dad;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #5a009d;
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6c757d;
+}
+.resultado {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6a0dad;
+}
